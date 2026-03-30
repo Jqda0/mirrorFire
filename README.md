@@ -16,7 +16,7 @@ Stream your Android phone screen to your TV via DLNA — no app needed on the TV
    ```yaml
    services:
      mirrorfire:
-       build: https://github.com/<your-repo>.git
+       build: https://github.com/Jqda0/mirrorFire.git
        container_name: mirrorfire
        network_mode: host
        restart: unless-stopped
