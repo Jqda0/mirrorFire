@@ -3,7 +3,7 @@ const { getActiveStream, setActiveStream, clearActiveStream } = require('../stat
 const { getLocalIP } = require('../network');
 const { dlnaSetAndPlay, dlnaStop } = require('../dlna');
 
-const PORT = 82;
+const PORT = process.env.PORT || 82;
 const router = Router();
 
 router.post('/start-cast', async (req, res) => {

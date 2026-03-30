@@ -21,7 +21,7 @@ app.use(streamRouter);
 
 setupWebSocket(wss);
 
-const PORT = 82;
+const PORT = process.env.PORT || 82;
 
 server.listen(PORT, '0.0.0.0', () => {
   const ip = getLocalIP();

@@ -1,6 +1,7 @@
 const os = require('os');
 
 function getLocalIP() {
+  if (process.env.LAN_IP) return process.env.LAN_IP;
   const nets = os.networkInterfaces();
   let fallback = null;
   for (const name of Object.keys(nets)) {
