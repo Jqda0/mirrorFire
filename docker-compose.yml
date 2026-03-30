@@ -1,0 +1,6 @@
+services:
+  mirrorfire:
+    build: .
+    container_name: mirrorfire
+    network_mode: host
+    restart: unless-stopped
